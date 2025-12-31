@@ -1,0 +1,100 @@
+Project 2025
+1. Problem Specification
+You will be assigned a robot. The robot has three IR sensors facing forward, right and left. You can revise Exercise 3 using Physical Equipment for more information on how the robot operates.
+
+The goal of the project is to write code to make the robot pass different challenges, as outlined in the Essential, Extension and Advanced sections below. 
+
+You will spend the rest of your labs (i.e. Week 8 -13) on this project. This sounds like a lot of time, but it really isn't if you want to achieve good results. Value every minute in the lab.
+
+Keep the following constraints in mind:
+
+We cannot and will not extend any deadlines for this assessment. Your team must complete the project by week 12 (for the assessment in week 13).
+It is not possible to take robots home -> You can only test your code in the labs.
+You will receive time outside of your scheduled labs to work on the robots.
+It is not possible to attend any lab session other than the one that you are enrolled in.
+If you cannot achieve essential level in this project, you will fail this unit.
+We will not accept any excuses for low/poor performance of your robot when marking. 
+Here's some additional advice:
+
+The mazes will be busy, especially towards the end of the semester. Use your week 8/9/10 labs to get as much time on the maze as possible.
+Successful teams will value every minute of their labs and meet outside of class to prepare different approaches. These teams can then fully use their valuable lab time to test and refine their code.
+Successful teams will also buy a pack of at least 10 (=2x5) good AA batteries, 5 for working on their robot and 5 for marking. We do offer lab batteries, but battery charge and other factors will negatively impact your robot's performance. Flat batteries will not be accepted as an excuse for your robot's underperformance during marking.
+Successful teams will get marked in week 11 to avoid the risk of failing extension or advanced tasks in weeks 12 and 13, when maze time is limited most.
+2. Sensor shield
+In Lab Exercise 3 using Physical Equipment, you added two IR LED/sensor pairs to your robot. One faced left and one faced right. You worked out a detection distance vs. resistance relationship. You used the sensor detection to change the wheel servo motor behaviour so that the robot could avoid obstacles.
+
+To make the project easier for you, we have developed a prototype sensor shield for you to use in the labs. This has three IR sensors: one faces left, one faces forward, and one faces right. This is the same arrangement as was used in the project simulation exercise, except that the side-facing sensors are now located at the front of the robot (facing sideways) rather than half way down each side.
+
+There is a table printed on top of the shield (see below) which shows you which digital pins are being used by each LED and sensor. You should make sure that your code uses these pins.
+
+20230706 IR sensor shield v2.1 - 3D view.png
+
+If for any reason you think that your sensors might be faulty, download and run the sensor test code here. This code lights the appropriate red LED when the sensor detects an object. If this code works, the sensors are working properly. 
+
+3. Assessment
+You can get marked in weeks 11, 12 and 13. You only have one attempt to get marked per week. To get marked for Extension [Advanced], you must have passed Essential [Extension] level. Once passed, you can still try to improve your time by getting marked again the following week.
+
+Any contact between any component of the robot and the wall (including pillars), no matter how light, will fail your current attempt. The lab demonstrator will then move on to the next team.
+
+You cannot change your code while being marked off, even if you complete two or more levels at once.
+
+ 
+
+We will ask every team member questions about the team's code; a team can only pass if all team members understand the code in detail.
+
+You must upload your code before getting assessed (3 reuploads total for 3 labs with marking). We will make sure your code is not copied from other students.
+
+Essential Level
+
+To complete essential, your robot must be able to complete task (3) in less than 90 seconds. However, we highly encourage you to implement task (1) and (2) first.
+
+(1) Take off, follow a corridor and stop when a wall is in front of the robot. (Blue Path)
+(2) Take off, follow a corridor, perform a left or right turn when a wall is detected, follow a corridor again and stop when the robot detects the next wall in front of it. (Purple Path)
+(3) Take off, follow a corridor, perform a left or right turn when a wall is detected, repeat, and stop when the robot reaches a dead end. (Green Path)
+The maze will either be as below or a mirrored version of it where your robot will have to turn right instead of left:
+
+image.png
+
+ 
+
+Extension level
+
+Your robot will have to be able to navigate a more complex path in less than 45 seconds.
+
+Your path will contain:
+
+One S-turn
+One U-turn
+One T-Junction
+A short dead-end
+A long dead-end
+(potentially: corner(s), long stretches, different sequence of features, and similar)
+Your robot will have to be able to distinguish between a short dead end and a long dead end. Only reaching the end of a long dead end with the robot facing forward will complete the challenge.
+
+If your robot encounters a short dead end, it must either spin in place or reverse to escape. 
+
+The extension maze will vary each time we mark a team, but it will always contain the abovementioned features. One possible extension maze is shown below.
+
+image.png
+
+A sample code was used to benchmark one possible extension maze (see above). The robot reached the finish area in 32 seconds.
+
+Based on our benchmarking, bonus points will apply for robots faster than 32 seconds (+0.5 points for final mark of unit), faster than 28 seconds (+1 point for final mark of unit), and faster than 26 seconds (+1 point for final mark of unit). Bonus points do not apply to students completing advanced level.
+
+ 
+
+Advanced Level:
+
+Advanced students must complete an actual maze on the big maze board. 
+
+Features will include, but are not limited to:
+
+Islands (robots might end up spinning around them)
+Multiple Possible Paths
+Open Spaces (only pillars, no white wall inserts)
+Other Complex Features
+You will be assigned a random starting position. The finish area is the end of a 'long dead-end' introduced in Extension Level. A long dead-end is always straight (no corners). It could be anywhere in the maze.
+
+Your robot must locate and stop in the finish area within 150 seconds (updated 2025-04-29).
+
+There are many different possible advanced mazes.
