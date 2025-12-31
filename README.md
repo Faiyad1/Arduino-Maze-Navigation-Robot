@@ -18,7 +18,6 @@ An autonomous maze-solving robot built on the Arduino BOE Shield-Bot platform. T
 - [Key Parameters](#key-parameters)
 - [Tuning Notes](#tuning-notes)
 - [Files](#files)
-- [References](#references)
 
 ## Features
 
@@ -95,15 +94,10 @@ The code is designed to handle:
 
 ## Files
 
-- `FinalAdvancedMaze.ino` - Main robot control code
+- `ArduinoFinalAdvancedMaze.ino` - Main robot control code
 - `AssignmentSpecification.txt` - Project requirements and maze specifications
-- `122-32335-*.pdf` - BOE Shield-Bot documentation
+- `122-32335-Shield-Bot-web-v1.1.pdf` - BOE Shield-Bot documentation
 - `TSOP-4038 datasheet.pdf` - IR sensor receiver datasheet
-
-## References
-
-- https://learn.parallax.com/?s=chapter+7+navigating+infrared+10
-- https://canvas.sydney.edu.au/courses/64732/pages/exercise-3-using-physical-equipment?module_item_id=2586788
 
 ---
 
